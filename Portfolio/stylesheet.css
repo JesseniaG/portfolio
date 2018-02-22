@@ -1,0 +1,142 @@
+/* reset browser default */  
+
+*{
+	margin:0;
+	padding:0;
+}
+
+	  body, html {
+	  height: 100%;
+	  ;
+}
+
+.container, .content{
+	max-width: 1000px;
+	margin: 0 auto;
+	 
+}
+
+/* Parallax Slide */
+.bgimg-1, .bgimg-2{
+	  position: relative;
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+
+	}
+
+	.bgimg-1 {
+	  background-image: url("images/cover.jpg");
+	  min-height: 600px;
+	}
+
+	.bgimg-2 {
+	  background-image: url("images/i-section.jpg");
+	  min-height: 100%;
+	}
+
+
+nav {
+	text-align: right;
+	flex: 0 0 auto;
+		
+	}
+
+nav li{
+	display: inline;
+	margin-left: 1em;
+
+	}
+
+li a {
+	color:#000;
+	text-decoration: none;
+}
+
+li a:hover{
+	color:grey;
+}
+
+header{ 
+	display: flex;
+	flex-direction:column;
+	margin: 1em 0;
+
+}
+
+h1{
+	font-size: 25pt;
+	width: 20px;
+	padding-top: 250px;
+	
+}
+
+.title{
+	display: flex;
+	padding-top: 25px;
+}
+
+.bio-row{
+	display: flex;
+	flex-direction: row;
+	
+
+}
+
+
+.bio-text {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	padding-top: 100px;
+	
+
+}
+
+.bio-pic img{
+ margin-left: 60%;
+}
+
+.row{
+	display: flex; 
+	flex-direction: column;
+
+	
+}
+
+@media only screen and (max-device-width: 1024px) {
+	    .bgimg-1,
+	    .bgimg-2,
+	    {
+	        background-attachment: scroll;
+	    }
+	} 
+
+
+@media (min-width:768px) {
+
+	header{
+		flex-direction:row;
+	}
+
+	nav {
+	flex: 0 0 auto;
+	
+	}
+
+	.row{
+		flex-direction: row;
+	}
+
+	.hvrbox.hvrbox-layer_bottom.hvrbox-layer_top hvrbox-layer_slideup{
+		margin-right:1em;
+
+	}
+	.hvrbox.hvrbox-layer_bottom.hvrbox-layer_top hvrbox-layer_slideup{
+		margin-right: 0;
+	}
+
+
+
+}
