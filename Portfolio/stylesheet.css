@@ -116,6 +116,18 @@ h2 {
 	margin: .5em;
 
 }
+
+.content{
+	margin-bottom: 1.5em;
+}
+
+footer{
+	background-color: white;
+	height: 50px;
+	text-align: center;
+	padding-top:50px;
+}
+
 @media only screen and (max-device-width: 1024px) {
 	    .bgimg-1,
 	    .bgimg-2,
