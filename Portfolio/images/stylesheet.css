@@ -1,0 +1,225 @@
+/* reset browser default */  
+
+*{
+	margin:0;
+	padding:0;
+}
+
+	  body, html {
+	  height: 100%;
+	  
+}
+
+.container, #content{
+	max-width: 1000px;
+	margin: 0 auto;
+	 
+}
+
+ /*-------------Parallax Slide----------------*/
+
+.bgimg-1, .bgimg-2{
+	  position: relative;
+	  background-attachment: fixed;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+
+	}
+
+	.bgimg-1 {
+	  background-image: url("images/Background-1.jpg");
+	  min-height: 400px;
+	}
+
+	.bgimg-2 {
+	  background-image: url("images/c-section.jpg");
+	  min-height: 100%;
+	}
+
+ /*-------------End of parallax Slide----------------*/
+  /*-------------Navigation Bar----------------*/
+ nav {
+	text-align: right;
+	flex: 0 0 auto;
+		
+	}
+
+nav li{
+	display: inline;
+	margin-left: 1em;
+
+	}
+
+li a {
+	color:#000;
+	text-decoration: none;
+}
+
+li a:hover{
+	color:grey;
+}
+ /*-------------End of navigation----------------*/
+header{ 
+	display: flex;
+	flex-direction:column;
+	margin: 1em 0;
+
+}
+
+h1{
+	font-size: 25pt;
+	width: 20px;
+	
+}
+
+#wrapper{
+	padding-top: 50px;
+	height: 25%;
+}
+
+#bio{
+	padding-top: 80px;
+
+}
+header {
+	float: right;
+}
+.title{
+	display: flex;
+	padding-top: 25px;
+}
+
+.bio-row{
+	display: flex;
+	flex-direction: row;
+}
+
+.bio-text {
+	display: flex;
+	flex-direction: column;
+	width: 350px;
+	line-height: 1.5em;
+	
+
+}
+
+.row{
+	display: flex; 
+	flex-direction: column;
+	background-color: white;
+	padding: 1.7em;
+
+	
+}
+
+
+h2 {
+	
+	font-variant: small-caps;
+	background: rgba(0, 0, 0, .7); 
+	color:white;
+	width: 30%;
+	padding: .5em;
+	margin: .5em;
+
+}
+
+#content{
+	margin-bottom: 1.5em;
+}
+
+.hvrbox-text p{
+	font-size: 12pt;
+
+}
+
+#footer{
+	background-color: black;
+	color: white;
+	height: 50px;
+	text-align: center;
+	padding:1em;
+
+}
+
+.illustratedmac img{
+	margin-left: 900px;  
+}
+.illustratedmac {
+  animation: top-updown 1s 1s ease-in-out alternate infinite;
+  animation-fill-mode: both;
+}
+.illustratedmac {
+  animation: middle-updown 2s 2s ease-in-out alternate infinite;
+  animation-fill-mode: both;
+   
+}
+
+
+@keyframes top-updown {
+  0% {
+    transform: translateY(40px);
+  }
+  20% {
+    transform: translateY(40px);
+  }
+  80% {
+    transform: translateY(-180px);
+  }
+  100% {
+    transform: translateY(-180px);
+  }
+}
+
+@keyframes middle-updown {
+  0% {
+    transform: translateY(30px);
+  }
+  20% {
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+
+@media only screen and (max-device-width: 1024px) {
+	    .bgimg-1,
+	    .bgimg-2,
+	    {
+	        background-attachment: scroll;
+	    }
+	} 
+
+
+@media (min-width:768px) {
+
+	header{
+		flex-direction:row;
+	}
+
+	nav {
+	flex: 0 0 auto;
+	
+	}
+
+	.row{
+		flex-direction: row;
+	}
+
+	.hvrbox.hvrbox-layer_bottom.hvrbox-layer_top hvrbox-layer_slideup{
+		margin-right:1em;
+
+	}
+	.hvrbox.hvrbox-layer_bottom.hvrbox-layer_top hvrbox-layer_slideup{
+		margin-right: 0;
+	}
+
+
+
+}
